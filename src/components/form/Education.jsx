@@ -1,6 +1,6 @@
 export default function Education() {
     return (
-        <div className="font-serif mt-5">
+        <div className="font-serif">
             <h2 className="text-xl text-center">
                 Education
             </h2>
@@ -10,13 +10,13 @@ export default function Education() {
                        className="bg-gray-50 border border-gray-300 outline-none rounded-lg focus:border-blue-800 block w-full p-2.5"/>
             </div>
             <div className="mx-7 mb-3">
-                <label htmlFor="title" className="block mb-2 font-medium">Title of Study: </label>
-                <input type="text" id="title"
+                <label htmlFor="studytitle" className="block mb-2 font-medium">Title of Study: </label>
+                <input type="text" id="studytitle"
                        className="bg-gray-50 border border-gray-300 outline-none rounded-lg focus:border-blue-800 block w-full p-2.5"/>
             </div>
             <div className="mx-7 mb-3">
-                <label htmlFor="date" className="block mb-2 font-medium">Date of Completion: </label>
-                <input type="date" id="date" className="bg-gray-50 border border-gray-300 outline-none rounded-lg focus:border-blue-800 block w-full p-2.5"/>
+                <label htmlFor="studyend" className="block mb-2 font-medium">Date of Completion: </label>
+                <input type="date" id="studyend" className="bg-gray-50 border border-gray-300 outline-none rounded-lg focus:border-blue-800 block w-full p-2.5"/>
             </div>
         </div>
     )
