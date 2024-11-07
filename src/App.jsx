@@ -1,9 +1,8 @@
 import './App.css'
+import Header from "./components/Header.jsx";
 
 export default function App() {
     return (
-        <h1 className="text-3xl font-bold underline font-serif">
-            Hello world!
-        </h1>
+        <Header />
     )
 }
