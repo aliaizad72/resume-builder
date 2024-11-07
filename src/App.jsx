@@ -16,10 +16,10 @@ export default function App() {
             end: "2023-01-13"
         },
         experience: {
-            company: "",
-            position: "",
-            start: "",
-            end: ""
+            company: "CoinGecko",
+            position: "Software Engineer Intern (Web)",
+            start: "2024-12-01",
+            end: "2025-05-31"
         }
     }
 
