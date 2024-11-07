@@ -1,4 +1,5 @@
-export default function WorkExperience() {
+// eslint-disable-next-line react/prop-types
+export default function WorkExperience({ company, position, start, end }) {
     return (
         <div className="font-serif">
             <h2 className="text-xl text-center">
@@ -8,22 +9,22 @@ export default function WorkExperience() {
                 <div className="mx-7 mb-3">
                     <label htmlFor="company" className="block mb-2 font-medium">Company Name: </label>
                     <input type="text" id="company"
-                           className="bg-gray-50 border border-gray-300 outline-none rounded-lg focus:border-blue-800 block w-full p-2.5"/>
+                           className="bg-gray-50 border border-gray-300 outline-none rounded-lg focus:border-blue-800 block w-full p-2.5" defaultValue={company}/>
                 </div>
                 <div className="mx-7 mb-3">
                     <label htmlFor="position" className="block mb-2 font-medium">Position Title: </label>
                     <input type="text" id="position"
-                           className="bg-gray-50 border border-gray-300 outline-none rounded-lg focus:border-blue-800 block w-full p-2.5"/>
+                           className="bg-gray-50 border border-gray-300 outline-none rounded-lg focus:border-blue-800 block w-full p-2.5" defaultValue={position}/>
                 </div>
                 <div className="mx-7 mb-3">
                     <label htmlFor="workstart" className="block mb-2 font-medium">Worked from: </label>
                     <input type="date" id="workstart"
-                           className="bg-gray-50 border border-gray-300 outline-none rounded-lg focus:border-blue-800 block w-full p-2.5"/>
+                           className="bg-gray-50 border border-gray-300 outline-none rounded-lg focus:border-blue-800 block w-full p-2.5" defaultValue={start}/>
                 </div>
                 <div className="mx-7 mb-3">
                     <label htmlFor="workend" className="block mb-2 font-medium">Worked until: </label>
                     <input type="date" id="workend"
-                           className="bg-gray-50 border border-gray-300 outline-none rounded-lg focus:border-blue-800 block w-full p-2.5"/>
+                           className="bg-gray-50 border border-gray-300 outline-none rounded-lg focus:border-blue-800 block w-full p-2.5" defaultValue={end}/>
                 </div>
             </div>
         </div>
