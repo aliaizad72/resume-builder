@@ -2,13 +2,14 @@ import './App.css'
 import Header from "./components/Header.jsx";
 import Description from "./components/Description.jsx";
 import Form from "./components/Form.jsx"
+import Resume from "./components/Resume.jsx"
 import {useState} from "react";
 
 export default function App() {
     const defaultResume = {
-        name: "",
-        email: "",
-        phone: "",
+        name: "Ali Aizad",
+        email: "aliaizad72@gmail.com",
+        phone: "60142529895",
         education: {
             school: "",
             title: "",
@@ -51,6 +52,7 @@ export default function App() {
             <Header />
             <Description />
             <Form resume={resume} submitFn={createResumeObj} />
+            <Resume resume={resume} />
         </>
     )
 }
