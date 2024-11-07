@@ -1,7 +1,11 @@
 import GeneralInfo from "./form/Generalnfo.jsx";
+import Education from "./form/Education.jsx";
 
 export default function Form() {
     return (
-        <GeneralInfo />
+        <form>
+            <GeneralInfo />
+            <Education />
+        </form>
     )
 }
