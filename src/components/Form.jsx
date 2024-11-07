@@ -4,7 +4,7 @@ import WorkExperience from "./form/WorkExperience.jsx";
 
 export default function Form({ resume, submitFn }) {
     return (
-        <form onSubmit={submitFn} className="md:w-[768px] md:mx-auto mb-4 flex flex-col gap-5">
+        <form onSubmit={submitFn} className="md:w-[768px] md:mx-auto mb-4 flex flex-col gap-5 px-7">
             <GeneralInfo name={resume.name} email={resume.email} phone={resume.phone}/>
             <Education school={resume.education.school} title={resume.education.title} end={resume.education.end}/>
             <WorkExperience company={resume.experience.company} position={resume.experience.position} start={resume.experience.start} end={resume.experience.end} />

@@ -11,9 +11,9 @@ export default function App() {
         email: "aliaizad72@gmail.com",
         phone: "60142529895",
         education: {
-            school: "",
-            title: "",
-            end: ""
+            school: "HELP University",
+            title: "Bachelors of Psychology",
+            end: "2023-01-13"
         },
         experience: {
             company: "",
@@ -48,11 +48,11 @@ export default function App() {
     }
 
     return (
-        <>
+        <div className="font-serif">
             <Header />
             <Description />
             <Form resume={resume} submitFn={createResumeObj} />
             <Resume resume={resume} />
-        </>
+        </div>
     )
 }
